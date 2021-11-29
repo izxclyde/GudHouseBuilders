@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Gudhouse Builders</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#home">
+            <h1><span>G</span>udHouse <span>B</span>uilders</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#" onclick="goToPage('myIndex')"  >Home</a></li>
+            <li><a href="#" onclick="goToPage('myServices')" >Services</a></li>
+            <li><a href="#" onclick="goToPage('myProjects')">Projects</a></li>
+            <li><a href="#" onclick="goToPage('myAbout')">About</a></li>
+            <li><a href="#" onclick="goToPage('myContacts')">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+  
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>C</span>lyde <span>N</span>atividad</h1>
+      </div>
+      <h2>Your Complete Web Solution</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2020. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+</body>
+
+<script>
+  function goToPage(goTo)
+  {
+    if(goTo == 'myIndex')
+  {
+    location.replace("./index.html")
+  }
+  else if (goTo == "myServices")
+  {
+    location.replace("./services.html")
+  }
+  else if (goTo == "myProjects")
+  {
+    location.replace("./projects.html")
+  }
+  else if (goTo == "myAbout")
+  {
+    location.replace("./about-us.html")
+  }
+  else if (goTo == "myContacts")
+  {
+    location.replace("./contact.html")
+  } 
+  }
+  
+
+</script>
